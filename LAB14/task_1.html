@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MANI CHANDANA SEELAM — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#f7fbff;
+            --card:#ffffff;
+            --muted:#6b7280;
+            --accent:#6cc4ff;
+            --accent-2:#b7f1c9;
+            --glass: rgba(255,255,255,0.7);
+            --radius:14px;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+            background: linear-gradient(180deg,var(--bg),#ffffff 60%);
+            color:#0f1724;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            padding:32px;
+        }
+        .container{max-width:980px;margin:0 auto}
+        header{
+            display:flex;
+            align-items:center;
+            gap:18px;
+            margin-bottom:22px;
+        }
+        .avatar{
+            width:96px;height:96px;border-radius:12px;
+            background:linear-gradient(135deg,var(--accent),var(--accent-2));
+            display:flex;align-items:center;justify-content:center;
+            color:#063047;font-weight:700;font-size:22px;
+            box-shadow:0 6px 18px rgba(15,23,36,0.06);
+        }
+        h1{margin:0;font-size:22px}
+        .sub{color:var(--muted);font-size:14px;margin-top:6px}
+        .card{
+            background:var(--card);
+            border-radius:var(--radius);
+            padding:18px;
+            box-shadow:0 8px 30px rgba(15,23,36,0.04);
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:1fr 320px;
+            gap:18px;
+            margin-top:18px;
+        }
+
+        .info p{margin:8px 0;color:var(--muted);font-size:14px}
+        .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+        .chip{
+            background:linear-gradient(180deg,rgba(108,196,255,0.12),rgba(183,241,201,0.08));
+            border-radius:999px;padding:8px 12px;font-weight:600;color:#034049;font-size:13px;
+        }
+
+        .projects{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+        .proj{
+            display:flex;gap:12px;align-items:flex-start;
+            padding:14px;border-radius:12px;background:linear-gradient(90deg,rgba(255,255,255,0.9),rgba(250,255,250,0.9));
+            border:1px solid rgba(10,22,28,0.03);
+        }
+        .proj .left{
+            width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent-2),var(--accent));
+            display:flex;align-items:center;justify-content:center;font-weight:700;color:#04323a;
+            font-size:18px;
+        }
+        .proj h3{margin:0;font-size:16px}
+        .proj p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+        .proj .meta{margin-left:auto;display:flex;flex-direction:column;gap:8px}
+        .btn{
+            appearance:none;border:0;background:#e6f9ff;color:#034049;padding:8px 12px;border-radius:10px;font-weight:600;
+            text-decoration:none;font-size:13px;cursor:pointer;
+        }
+        footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+
+        /* responsive */
+        @media(max-width:880px){
+            .grid{grid-template-columns:1fr; }
+            .meta{flex-direction:row;margin-left:0}
+            .proj{align-items:center}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">M C</div>
+            <div>
+                <h1>MANI CHANDANA SEELAM</h1>
+                <div class="sub">B.Tech Student — SR University • Hasanparthy, Warangal</div>
+                <div class="sub" style="margin-top:8px">Focused on web & mobile development, data visualization and simple UX solutions</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <main>
+                <div class="card">
+                    <section>
+                        <h2 style="font-size:16px;margin:0 0 8px 0">About</h2>
+                        <p class="info">I am a Computer Science student at SR University. I enjoy building practical tools for classrooms and small organizations. I like simple, usable interfaces and leveraging full-stack web technologies to turn ideas into working projects.</p>
+                        <div class="chips" aria-hidden="true">
+                            <div class="chip">HTML</div>
+                            <div class="chip">CSS</div>
+                            <div class="chip">JavaScript</div>
+                            <div class="chip">React</div>
+                            <div class="chip">Python</div>
+                            <div class="chip">SQL</div>
+                        </div>
+                    </section>
+
+                    <section style="margin-top:16px">
+                        <h2 style="font-size:16px;margin:0 0 8px 0">Projects</h2>
+                        <div class="projects">
+                            <article class="proj">
+                                <div class="left">CIT</div>
+                                <div>
+                                    <h3>Classroom Issue Tracker</h3>
+                                    <p>A lightweight web app to report, assign and track classroom-related issues (equipment faults, seating, maintenance). Includes ticket status, simple analytics for frequent issues and role-based views for students and faculty.</p>
+                                </div>
+                                <div class="meta">
+                                    <a class="btn" href="#" title="View repo">Repo</a>
+                                </div>
+                            </article>
+
+                            <article class="proj">
+                                <div class="left">SP</div>
+                                <div>
+                                    <h3>Study Planner</h3>
+                                    <p>Personal study planner with task scheduling, progress tracking and daily focus timers. Built to help students plan study blocks and visualize weekly goals.</p>
+                                </div>
+                                <div class="meta">
+                                    <a class="btn" href="#" title="View demo">Demo</a>
+                                </div>
+                            </article>
+
+                            <article class="proj">
+                                <div class="left">AV</div>
+                                <div>
+                                    <h3>Attendance Visualizer</h3>
+                                    <p>Small dashboard to upload attendance CSVs and generate interactive charts. Useful for spotting trends and identifying students needing help.</p>
+                                </div>
+                                <div class="meta">
+                                    <a class="btn" href="#" title="View repo">Repo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section style="margin-top:18px">
+                        <h2 style="font-size:16px;margin:0 0 8px 0">Contact</h2>
+                        <p style="margin:0 0 8px 0;color:var(--muted)">Email: mani.chandana@sruniv.example</p>
+                        <p style="margin:0;color:var(--muted)">Location: Hasanparthy, Warangal</p>
+                    </section>
+                </div>
+            </main>
+
+            <aside>
+                <div class="card">
+                    <h3 style="margin:0 0 8px 0">Quick Info</h3>
+                    <p class="sub" style="margin-bottom:12px">Student • Web & Mobile • Open to collaboration</p>
+
+                    <div style="display:grid;gap:8px">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div style="color:var(--muted)">University</div>
+                            <div style="font-weight:700">SR University</div>
+                        </div>
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div style="color:var(--muted)">Degree</div>
+                            <div style="font-weight:700">B.Tech (CSE)</div>
+                        </div>
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div style="color:var(--muted)">Year</div>
+                            <div style="font-weight:700">2nd Year</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:12px">
+                        <a class="btn" href="https://github.com/manichandana" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <h3 style="margin:0 0 8px 0">Skills</h3>
+                    <div style="display:flex;flex-direction:column;gap:8px">
+                        <div style="display:flex;justify-content:space-between">
+                            <div style="color:var(--muted)">Frontend</div><div>HTML • CSS • React</div>
+                        </div>
+                        <div style="display:flex;justify-content:space-between">
+                            <div style="color:var(--muted)">Backend</div><div>Node • Express • Python</div>
+                        </div>
+                        <div style="display:flex;justify-content:space-between">
+                            <div style="color:var(--muted)">Data</div><div>SQL • Charting</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px;text-align:center">
+                    <h3 style="margin:0 0 8px 0">Availability</h3>
+                    <p class="sub" style="margin:0 0 12px 0">Open for internships and small projects</p>
+                    <a class="btn" href="mailto:mani.chandana@sruniv.example">Email Me</a>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            Portfolio — MANI CHANDANA SEELAM • Built with simple HTML, CSS & minimal JS
+        </footer>
+    </div>
+</body>
+</html>
