@@ -1,0 +1,27 @@
+
+==============================
+Date & Time: 2025-11-06 10:25:51.512946
+Patient Name: Mani
+Age: 20
+Heart Rate: 110.0 bpm
+ECG Variation: 0.75
+Result: Irregular pattern detected
+
+=====================================
+
+=====================================
+       AI HEART REPORT LOG
+=====================================
+Date & Time     : 2025-11-06 10:28:27.916173
+Patient Name    : mani
+Age             : 20 years
+Heart Rate      : 110.0 bpm
+ECG Variation   : 0.5
+-------------------------------------
+AI Result       : ⚠️ Irregular pattern detected
+Recommendation  : Please consult a cardiologist for further medical analysis.
+-------------------------------------
+Human Oversight Notice:
+This AI result is for assistance only.
+Final diagnosis must be verified by a doctor.
+=====================================
